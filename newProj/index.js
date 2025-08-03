@@ -10,9 +10,7 @@ const path = require('path');           //path 모듈 import
     //path 모듈은 파일과 디렉토리 경로를 다룰때 필요한 유틸리티 함수를 제공한다. 
 const routes = require('./routes/index');//현재 프로젝트의 routes 폴더에 있는 index.js를 import 
 
-app.get('/', (req,res)=> {      //application이 서버에 request하면 받을 response 출력물 
-    res.send('Hello express!');
-});
+
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -22,7 +20,15 @@ app.use('/about', routes);
 
 var router = express.Router();
 
+router.get('/about', function(req, res){
+    res.render('about', {title: 'Hello world!'});
+});
 
+app.get('/', (req,res)=> {      //application이 서버에 request하면 받을 response 출력물 
+    res.send('Hello express!');
+});
+
+module.exports = router; 
 server.listen(3000); //server로 request할 포트 3000번으로 지정 
 
 
