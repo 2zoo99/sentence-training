@@ -4,7 +4,8 @@
   "description": "new node.js project by 2zoo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"    
   },
   "author": "2zoo",
   "license": "ISC",

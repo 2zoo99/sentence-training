@@ -1,0 +1,43 @@
+npm
+node -v
+npm -v
+mysql
+mysql --version
+clear
+yum -v
+yum
+yum install
+sudo apt update
+sudo apt install mysql-server
+mysql -c
+mysql -v
+sudo service mysql stop
+sudo chmod -R 755 /var/run/mysqld/
+sudo chown -R mysqld:mysqld /var/lib/mysql
+sudo chown -R mysql:mysql /var/lib/mysql
+sudo chmod -R 755 /var/run/mysql/
+sudo chown -R mysql:mysql /var/run/mysqld/
+sudo service mysql start
+mysql -u root -p
+mkdir newProj
+cd newProj/
+npm init
+npm install -g npm@11.5.2
+npm fund
+npm install express
+npm install ejs
+npm install body-parser
+npm install -g nodemon
+npm install bootstrap
+npm install express-session
+npm install memorystore
+npm install mysql
+touch index.js
+npm start
+npm run start
+npm run
+node index.js
+clear
+touch ../history.txt
+echo history >> ../history.txt 
+history -w ../history.txt 
